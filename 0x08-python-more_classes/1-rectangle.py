@@ -12,7 +12,7 @@ class Rectangle:
 
     def width(self):
         """ Private instance attribute 'width'"""
-        self.__width   # Private instance attribute
+        return self.__width   # Private instance attribute
 
     @property
     def width(self):
@@ -33,14 +33,14 @@ class Rectangle:
         return self.__height
 
     @property
-    def height(self, value):
+    def height(self):
         """ property setter """
         return self.__height
 
     @height.setter
     def height(self, value):
+        """ Raising Exception"""
         if not isinstance(value, int):
-            """ Raising Exception"""
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
