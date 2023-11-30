@@ -63,5 +63,5 @@ class Rectangle:
             return ""
         for i in range(self.__height):
             row = (self.__width * '#' + '\n')
-            rectangle = row * (self.__height) + (self.__width * '#')
+            rectangle = row * (self.__height - 1) + (self.__width * '#')
             return rectangle
