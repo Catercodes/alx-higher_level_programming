@@ -59,6 +59,8 @@ class Rectangle:
 
     def __str__(self):
         """representing character '#'"""
+        if self.width == 0 or self.width == 0:
+            return 0
         for i in range(self.__height):
             row = (self.__width * '#' + '\n')
             rectangle = row * (self.__height)
