@@ -53,15 +53,6 @@ class Rectangle:
     def perimeter(self):
         """ returns the perimeter of a rectangle"""
         _perimeter = (self.width + self.height) * 2
-        if self.height == 0 or self.width == 0:
+        if self.height or self.width == 0:
             return 0
         return _perimeter
-
-    def __str__(self):
-        """representing character '#'"""
-        if self.width == 0 or self.width == 0:
-            return ""
-        for i in range(self.__height):
-            row = (self.__width * '#' + '\n')
-            rectangle = row * (self.__height) + (self.__width * '#')
-            return rectangle
