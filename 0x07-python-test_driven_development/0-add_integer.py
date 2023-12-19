@@ -16,14 +16,14 @@ def add_integer(a, b=98):
         The sum of a and b
     """
     if not isinstance(a, int):
-        if type(a) != float:
+        if not isinstance(a, float):
             raise TypeError('a must be an integer')
         elif a == float('nan'):
             raise ValueError('Cannot convert float NaN to integer')
         else:
             a = int(a)
     elif not isinstance(b, int):
-        if type(b) != float:
+        if not isinstance(b, float):
             raise TypeError('b must be an integer')
         elif b == float('nan'):
             raise ValueError('Cannot convert float NaN to integer')
