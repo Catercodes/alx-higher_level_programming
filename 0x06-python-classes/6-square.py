@@ -58,9 +58,11 @@ class Square:
         self.__position = value
 
     def area(self):
+        """return the size of the area"""
         return self.area ** 2
 
     def my_print(self):
+        """ representing the coordinates by '#'"""
         if self.size == 0:
             print()
         else:
