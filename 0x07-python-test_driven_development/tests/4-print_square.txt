@@ -1,0 +1,34 @@
+print_square = __import__('4-print_square').print_square
+>>>print(print_square(4))
+####
+####
+####
+####
+>>>print("")
+
+>>>print(print_square(10))
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+>>>print("")
+
+>>>print(print_square(0))
+No output (size is 0)
+>>>print(print_square(1))
+#
+>>>print(print_square(-1))
+Traceback (most recent call last):
+	...
+ValueError: size must be >=0
+print(print_square(4.5)
+Traceback (most recent call last):
+	...
+TypeError:size must be an integer
+ 

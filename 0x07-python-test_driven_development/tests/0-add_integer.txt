@@ -15,17 +15,19 @@ TypeError: b must be an integer
 Traceback (most recent call last):
     ...
 TypeError: a must be an integer
->>> print (add_integer())
+>>> print(add_integer(float('nan')))
 Traceback (most recent call last):
-   ...
-TypeError: add_integer() missing 1 required positional argument: 'a'
->>> print(add_integer( 44, 6, 89))
-Traceback (most recent call last):
-   ...
-TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
->>> print (add_integer (float('nan')))
-Traceback (most recent call last):
-  ...
+    ...
 ValueError: cannot convert float NaN to integer
->>> print (add_integer(-4, -6))
--10
+
+>>> print(add_integer())
+Traceback (most recent call last):
+    ...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+>>> print(add_integer(23, 23, 23))
+Traceback (most recent call last):
+    ...
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+>>> print(add_integer(-2, -2))
+-4
+
