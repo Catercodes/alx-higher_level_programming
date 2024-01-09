@@ -30,4 +30,8 @@ Traceback (most recent call last):
 TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
 >>> print(add_integer(-2, -2))
 -4
+>>> print(add_integer(1, float("inf")))
+Traceback (most recent call last):
+   ...
+OverflowError: cannot convert float infinity to integer
 
