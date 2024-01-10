@@ -39,3 +39,11 @@ class TestMaxInteger(unittest.TestCase):
         """ check for None """
         with self.assertRaises(TypeError):
             max_integer(None)
+
+    def test_max_at_beginning(self):
+        """ this check when the max number is at the beginning"""
+        self.assertEqual(max_integer([100, 2, 4, 5]), 100)
+
+    def test_max_middle(self):
+        """check when the max is at the middle"""
+        self.assertEqual(max_integer([1, 4, 5, 77]), 77)
