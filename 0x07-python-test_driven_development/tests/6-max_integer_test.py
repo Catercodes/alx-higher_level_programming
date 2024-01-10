@@ -34,3 +34,8 @@ class TestMaxInteger(unittest.TestCase):
     def test_one_item(self):
         """ check when the item is one in a list"""
         self.assertEqual(max_integer([1]), 1)
+
+    def test_none(self):
+        """ check for None """
+        with self.assertRaises(TypeError):
+            max_integer(None)
