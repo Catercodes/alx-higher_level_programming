@@ -39,3 +39,7 @@ My_list is an isinstance of class List
 >>> my_list = MyList()
 >>> isinstance(my_list, list)
 True
+
+>>> my_list = MyList()
+>>> type(my_list) == MyList
+True
