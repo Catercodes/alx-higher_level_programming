@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" The python command"""
+
 
 class MyList(list):
     """ class of my list"""
