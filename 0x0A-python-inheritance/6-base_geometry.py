@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-""" The command python"""
+"""Contains class BaseGeometry"""
 
 
 class BaseGeometry:
+    """Non Empty BaseGeometry class"""
+
     def area(self):
-        """ raise a modified Exception"""
+        """area method to not be implemented"""
         raise Exception("area() is not implemented")
