@@ -1,8 +1,10 @@
 #!/usr/bin/python3
+""" The python command """
 from models.base import Base
 
 
 class Rectangle(Base):
+    """ THe Rectangle class inherited from base"""
     def __init__(self, width, height, x=0, y=0, id=None):
         """Call the constructor of the base class """
         super().__init__(id)
@@ -20,9 +22,9 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
+        """ The setter for width"""
         self.__width = value
 
-    # Getter and setter for height
     @property
     def height(self):
         """getter and setter for height"""
@@ -30,6 +32,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
+        """ The setter for  height"""
         self.__height = value
 
     @property
@@ -39,6 +42,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
+        """The setter for x"""
         self.__x = value
 
     @property
@@ -48,4 +52,5 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
+        """The settert for Y"""
         self.__y = value
