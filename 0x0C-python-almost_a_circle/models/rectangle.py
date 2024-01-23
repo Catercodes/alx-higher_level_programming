@@ -74,3 +74,7 @@ class Rectangle(Base):
         """ This validetor"""
         if not isinstance(value, int):
             raise TypeError(f"{name} must be an integer")
+
+    def area(self):
+        """function  calculate the area of a rec"""
+        return self.__width * self.__height
