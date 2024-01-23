@@ -86,6 +86,9 @@ class Rectangle(Base):
 
     def display(self):
         """ Display using the # character"""
-        row = self.__width * '#'
+        for i in range(self.__y):
+            print()
+        x = self.__x * " "
+        row = x + self.__width * '#'
         for i in range(self.__height):
             print(row)
