@@ -78,3 +78,8 @@ class Rectangle(Base):
     def area(self):
         """function  calculate the area of a rec"""
         return self.__width * self.__height
+
+    def __str__(self):
+        """ String Representation"""
+        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y}"
+        f"{self.__width}/{self.heigth}"
