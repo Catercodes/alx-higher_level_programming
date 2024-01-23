@@ -25,3 +25,12 @@ class TestRectangle(unittest.TestCase):
     def test_negative_integer(self):
         with self.assertRaises(ValueError):
             Rectangle(10, 2, 3, -1)
+
+    def test_other_types(self):
+        rec = Rectangle(2, 4)
+        with self.assertRaises(TypeError):
+            rec.x = {}
+
+    def test_string_width(self):
+        with self.assertRaises(TypeError):
+            Rectangle("width", 4)
