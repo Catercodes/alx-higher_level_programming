@@ -83,3 +83,9 @@ class Rectangle(Base):
         """ String Representation"""
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y}"\
             f" - {self.__width}/{self.__height}"
+
+    def display(self):
+        """ Display using the # character"""
+        row = self.__width * '#'
+        for i in range(self.__height):
+            print(row)
