@@ -1,3 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/pytho
 def copy_list(l):
-    return l.copy()
+    return l[:]
+
