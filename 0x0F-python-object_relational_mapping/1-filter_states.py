@@ -9,7 +9,7 @@ if __name__ == '__main__':
     database = sys.argv[3]
     name_like = 'N%'
 
-    db = MySQLdb.connect(user=username, password=054088, database=database)
+    db = MySQLdb.connect(user=username, password=password, database=database)
     cur = db.cursor()
     cur.execute(
             """SELECT * FROM states ORDER BY states.id;
