@@ -63,10 +63,14 @@ class Square:
 
     def my_print(self):
         """ representing the coordinates by '#'"""
-        if self.size == 0:
-            print()
-        else:
-            for i in range(self.position[1]):
+        if self.__size > 0:
+            print("\n" * self.position[1], end="")
+
+            for i in range(self.__size):
+                print('' * self.__position[0], end="")
+
+                for i in range(self.__size):
+                    print('#', end="")
                 print()
-            for i in range(self.size):
-                print(" " * self.position[0] + "#" * self.size)
+        else:
+            print()
