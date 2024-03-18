@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" The python package """
 
 class LockedClas:
     """Locked class that allow no dynamically creation of instances
